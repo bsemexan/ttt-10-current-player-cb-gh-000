@@ -1,7 +1,7 @@
 def turn_count(board)
   i = 0
-  until i == 9
-    if board[i] != " "
+  board.each do |boards|
+    if boards != " "
       i += 1
     end
   end
